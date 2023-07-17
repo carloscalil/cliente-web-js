@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médicos</title>
+    <link rel="stylesheet" href="../css/pure.css">
+    <script src="js/index.js"></script>
+    <style>
+        #tabelaMedicos{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="../index.html" class="pure-menu-heading pure-menu-link">Home</a></li>
+            <li class="pure-menu-item"><a href="../medico/index.html" class="pure-menu-link">Médicos</a></li>
+            <li class="pure-menu-item"><a href="../paciente/index.html" class="pure-menu-link">Pacientes</a></li>
+        </ul>
+    </nav>
+    <h1>Lista de médicos</h1>
+    <form class="pure-form">
+        <label for="codigo">Código:</label>
+        <input type="text" id="codigo">
+        <button type="button" onclick="get()" class="pure-button pure-button-primary">Pesquisar</button>
+        <button type="button" onclick="create()" class="pure-button">Novo</button>
+    </form>      
+    <table id="tabelaMedicos" class="pure-table pure-table-bordered">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Data Nascimento</th>
+                <th>CRM</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="dadosTabelaMedico">
+
+        </tbody>
+    </table>
+</body>
+</html>
